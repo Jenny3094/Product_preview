@@ -1,41 +1,134 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Montserrat', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-body{
-background-color: #fff;
-padding:10px;
-
-}
-h1{
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
+body {
+  background-color: hsl(30, 38%, 92%);
 
 }
 
-p{
-    font-size:14px;
+figcaption {
+  margin-top: 10px;
+  font-size: 0.875em;
+  font-weight: 600;
+  letter-spacing: 0.4rem;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+ }
+
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.card-container{
-    padding:1rem 1rem;
-    margin-top:20px ;
-    background-color: hsl(30, 38%, 92%);
+.container{
+  display: flex;
+  justify-content: center;
+  width:500px;
 
 
 }
 
 .card-image img{
+  width:100%;
+  border-radius: 0.4rem 0 0 0.4rem;
+
+}
+
+
+
+
+.card {
+  background-color: #fff;
+  border-radius: 0 0.4rem 0.4rem 0;
+  width:600px;
+  height:375px;
+  padding:5px 10px 0;
+
+
+
+
+
+
+}
+
+.card-text h1{
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  margin-bottom: 0.625rem;
+
+  margin:2px 4px;
+  padding:5px 10px;
+  font-weight: 700;
+}
+.card-text p {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875em;
+   line-height: 1.5;
+   /* margin: 0 2rem 1.25rem 0; */
+  font-weight: 500;
+}
+
+.price-tag h2 {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.price-tag span {
+  margin-left: 1.25rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.card-button button {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 0.5rem 3rem;
+  border: none;
+  border-radius: 0.5rem;
+
+}
+
+button span {
+  margin-right: 0.625rem;
+  display: inline-flex;
+}
+
+/* @media screen and (max-width: 375px) {
+  body {
+    background-color: hsl(30, 38%, 92%);
+  }
+
+  .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height:400px;
+  }
+
+  .card-image img{
+    background-image: url("images/image-product-mobile.jpg");
     width:100%;
-    border-radius: 1rem 1rem 0 0;
-    margin-bottom: 20px;
-}
-
-.card-image p{
-    margin-bottom: 10px;
-}
-
-
+  }
+} */
